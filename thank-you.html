@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- REMIXICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/abd0def56f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--=============== Archivos css ===============-->
+    <link rel="stylesheet" href="css/navbar-footer.css" />
+
+    <link rel="stylesheet" href="css/academico.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat";
+        text-decoration: none;
+      }
+
+      .btn-regresar {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .btn-regresar:hover {
+        background-color: #0056b3;
+      }
+
+      /* Estilos para el contenedor del texto */
+      .text-container2 {
+        background-color: #f0f0f0; /* Color de fondo inicial */
+        padding: 0 20px; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        transition: background-color 0.3s ease; /* Transición suave */
+      }
+
+      .text-container2 p {
+        text-align: justify;
+      }
+
+      .text-container2:hover {
+        background-color: #e0e0e0; /* Color de fondo al hacer hover */
+      }
+
+      /* #region BANNER */
+      .div-banner {
+        position: relative;
+        /* cambiar de imagen */
+        background: url(../img/img-inicio/colegio.jpeg) center;
+        background-size: cover;
+        height: 250px;
+        overflow: hidden;
+      }
+
+      .banner-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+      }
+
+      /*  #region SUBDIRECTORA  */
+      .presentacion {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 50px auto;
+      }
+
+      .presentacion h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .presentacion h1::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        display: block;
+        margin: 0 auto;
+        background-color: #97b770;
+      }
+    </style>
+
+    <!-- Título y logo de la pestaña del sitio web -->
+    <title>Formulario enviado - IEPGPE "TTE CRL ALFREDO BONIFAZ FONSECA"</title>
+    <link rel="shortcut icon" href="img/insignia.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- #region BANNER -->
+    <div class="div-banner">
+      <div class="banner-container"></div>
+    </div>
+    <!-- #endregion BANNER -->
+
+    <div class="presentacion">
+      <h1>Gracias por tu mensaje</h1>
+    </div>
+
+    <div class="presentacion">
+      <div class="text-container2">
+        <p>Nos pondremos en contacto contigo lo antes posible</p>
+        <br />
+        <button
+          class="btn-regresar"
+          onclick="window.location.href='/index.html'"
+        >
+          Regresar a inicio
+        </button>
+        <br />
+        <br />
+      </div>
+    </div>
+  </body>
+</html>

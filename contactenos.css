@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+}
+
+/* #region BANNER */
+.div-banner {
+  position: relative;
+  /* cambiar de imagen */
+  background: url(../img/img-inicio/colegio.jpeg) center;
+  background-size: cover;
+  height: 250px;
+  overflow: hidden;
+}
+
+.banner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.banner-container h1 {
+  margin: 0;
+  font-size: 35px;
+}
+
+/* #endregion BANNER */
+
+/* #region CONTACTOS*/
+.contacto {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.contacto h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contacto h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #97b770;
+}
+
+.contacto p {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.container-card {
+  width: 70%;
+  display: flex;
+  max-width: 1190px;
+  border-radius: 20px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.container-card2 {
+  width: 35%;
+  display: flex;
+  max-width: 1190px;
+  border-radius: 20px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.title-cards {
+  margin: auto;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.card {
+  width: 90%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+}
+
+.card .contenido-card {
+  padding: 20px;
+  text-align: center;
+}
+
+.card .contenido-card h3 {
+  margin-bottom: 15px;
+  color: #97b770;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card .contenido-card p {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding: 20px;
+  text-align: left !important;
+}
+
+.card .contenido-card a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  /*color de letra del boton*/
+  border: 1px solid #97b770;
+  background-color: #97b770;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover {
+  background: #4e7228;
+  border: 1px solid #4e7228;
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container-card {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .card {
+    margin: 45px;
+  }
+
+  .container-card2 {
+    width: 100%;
+
+  }
+}
+
+/* #endregion CONTACTOS*/
+
+/* #region MAPA*/
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* #endregion MAPA*/
+
+/* #region formulario*/
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+
+.form-group textarea {
+  resize: none; /* Deshabilita el redimensionamiento */
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- REMIXICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/abd0def56f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--=============== Archivos css ===============-->
+    <link rel="stylesheet" href="css/navbar-footer.css" />
+    <link rel="stylesheet" href="css/asistente.css" />
+    <link rel="stylesheet" href="css/boton-sube.css" />
+    <link rel="stylesheet" href="css/estilo-texto2.css" />
+    <link rel="stylesheet" href="css/nosotros.css" />
+
+    <!-- Título y logo de la pestaña del sitio web -->
+    <title>
+      Plataforma Science Bits - IEPGPE "TTE CRL ALFREDO BONIFAZ FONSECA"
+    </title>
+    <link rel="shortcut icon" href="img/insignia.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <!-- #region BANNER -->
+    <div class="div-banner">
+      <div class="banner-container"></div>
+    </div>
+    <!-- #endregion BANNER -->
+
+    <div class="presentacion">
+      <div class="text-container2">
+        <h1>SCIENCE BITS</h1>
+        <p>
+          Science Bits es un repositorio multimedia de lecciones de ciencias que
+          promueve el paso de un modelo educativo basado en la mera transmisión
+          de hechos científicos a un modelo constructivista, basado en la
+          indagación, el descubrimiento, la reflexión y el razonamiento crítico.
+          Esta plataforma está diseñada para obtener el máximo rendimiento en
+          formato digital: tanto del potencial multimedia de la computadora de
+          cada alumno como de la pizarra digital. El Concytec que fomenta la
+          conformación de clubes de ciencias, ha impulsado la implementación en
+          los colegios con clubes, una nueva plataforma que acerca al gusto por
+          la ciencia. En ese sentido nuestra IE con su club ”Bonifacinos
+          explorando Conciencia” estarà fortalecido por Science Bits, cuyos
+          objetivos didácticos se centran en el desarrollo de las competencias
+          educativas y la comprensión de los conceptos clave, mediante un
+          aprendizaje activo basado en la investigación y el descubrimiento. El
+          modelo de enseñanza 5E es un modelo constructivista basado en 5 fases:
+          Engage, Explore, Explain, Elaborate y Evaluate. El modelo se basa en
+          empezar movilizando los conocimientos previos de los alumnos; proceder
+          conectando sus ideas con nuevos conocimientos adquiridos a través de
+          la investigación y el descubrimiento; proveer de explicaciones
+          formales de aquellos conceptos que serían difíciles de descubrir
+          intuitivamente; y proveer de oportunidades para demostrar los
+          aprendizajes comprensivos mediante su aplicación práctica.
+        </p>
+
+        <!-- Imagen que actúa como enlace -->
+        <a href="https://science-bits.pe/site/es/" target="_blank">
+          <img
+            src="img/img-plataformas/science-bits.png"
+            alt="Descripción de la imagen"
+            style="width: 100%; max-width: 600px"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <!-- Icono en la parte inferior derecha para acceder al asistente -->
+    <div id="icono" onclick="toggleRecuadro()">
+      <i class="fas fa-robot"></i>
+      <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+    </div>
+
+    <!-- Recuadro de opciones del asistente-->
+    <div id="recuadro">
+      <div id="cabecera">
+        <i class="fas fa-robot"></i>
+        <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+        <span>Asistente</span>
+      </div>
+      <div id="contenido">
+        <!--Mensaje inicial-->
+        <div id="mensaje">
+          <p>Hola, ¿En qué puedo ayudarte?</p>
+        </div>
+        <!--Botones iniciales-->
+        <div id="botones">
+          <button onclick="mostrarPreguntasFrecuentes()">
+            Consultas frecuentes
+          </button>
+          <button onclick="contactar()">
+            Quisiera ponerme en contacto con una persona
+          </button>
+        </div>
+        <!--Opciones de consultas frecuentes-->
+        <div id="opciones" style="display: none">
+          <div id="mensaje2">
+            <p>Selecciona la opción que más se adecue a tu consulta:</p>
+          </div>
+          <button onclick="window.location.href='matricula.html'">
+            Matrícula
+          </button>
+          <button onclick="window.location.href='noticias-institucion.html'">
+            Comunicados
+          </button>
+          <button onclick="mostrarTalleres()">Talleres</button>
+          <button onclick="reiniciar()">Regresar</button>
+        </div>
+        <!--Sección Talleres-->
+        <div id="talleres" style="display: none">
+          <div id="mensaje3">
+            <p>Estos son los talleres que ofrecemos:</p>
+          </div>
+          <button onclick="window.location.href='taller-computacion.html'">
+            Taller de computación
+          </button>
+          <button onclick="window.location.href='taller-danza.html'">
+            Taller de danza
+          </button>
+          <button onclick="window.location.href='taller-deporte.html'">
+            Taller de deporte
+          </button>
+          <button onclick="window.location.href='taller-musica.html'">
+            Taller de música
+          </button>
+          <button onclick="window.location.href='taller-teatro.html'">
+            Taller de teatro
+          </button>
+          <button onclick="reiniciarTalleres()">Regresar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón de regresar al inicio -->
+    <button id="scrollToTop" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Archivos JavaScript (js) -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="js/asistente.js"></script>
+    <script src="js/boton-sube.js"></script>
+  </body>
+</html>

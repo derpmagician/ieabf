@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- REMIXICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/abd0def56f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--=============== Archivos css ===============-->
+    <link rel="stylesheet" href="css/navbar-footer.css" />
+    <link rel="stylesheet" href="css/asistente.css" />
+    <link rel="stylesheet" href="css/boton-sube.css" />
+    <link rel="stylesheet" href="css/nosotros.css" />
+    <link rel="stylesheet" href="css/estilo-texto3.css" />
+
+    <!-- Título y logo de la pestaña del sitio web -->
+    <title>Organización - IEPGPE "TTE CRL ALFREDO BONIFAZ FONSECA"</title>
+    <link rel="shortcut icon" href="img/insignia.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <!-- #region BANNER -->
+    <div class="div-banner">
+      <div class="banner-container"></div>
+    </div>
+    <!-- #endregion BANNER -->
+
+    <div class="presentacion">
+      <h1>Organización</h1>
+    </div>
+
+    <!-- #region Himno -->
+    <div class="himno">
+      <div class="text-container3">
+        <p>
+          La gestión de la Institución Educativa está comprometida con la
+          excelencia académica y la formación integral pedagógica y en la
+          práctica de valores de nuestros estudiantes. La organización funcional
+          nos permite contribuir eficientemente en el cumplimiento del Plan
+          Estratégico Institucional (PEI) y del Plan de Trabajo (PT), así mismo
+          nos facilita el cumplimiento de las funciones académicas, pedagógicas
+          y administrativas.
+        </p>
+        <br />
+      </div>
+    </div>
+
+    <!-- #region Insignia -->
+    <div>
+      <div class="organigrama">
+        <img src="img/organizacion/principal.jpg" alt="" />
+      </div>
+    </div>
+    <!-- #endregion Insignia -->
+
+    <div id="footer-container"></div>
+
+    <!-- Icono en la parte inferior derecha para acceder al asistente -->
+    <div id="icono" onclick="toggleRecuadro()">
+      <i class="fas fa-robot"></i>
+      <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+    </div>
+
+    <!-- Recuadro de opciones del asistente-->
+    <div id="recuadro">
+      <div id="cabecera">
+        <i class="fas fa-robot"></i>
+        <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+        <span>Asistente</span>
+      </div>
+      <div id="contenido">
+        <!--Mensaje inicial-->
+        <div id="mensaje">
+          <p>Hola, ¿En qué puedo ayudarte?</p>
+        </div>
+        <!--Botones iniciales-->
+        <div id="botones">
+          <button onclick="mostrarPreguntasFrecuentes()">
+            Consultas frecuentes
+          </button>
+          <button onclick="contactar()">
+            Quisiera ponerme en contacto con una persona
+          </button>
+        </div>
+        <!--Opciones de consultas frecuentes-->
+        <div id="opciones" style="display: none">
+          <div id="mensaje2">
+            <p>Selecciona la opción que más se adecue a tu consulta:</p>
+          </div>
+          <button onclick="window.location.href='matricula.html'">
+            Matrícula
+          </button>
+          <button onclick="window.location.href='noticias-institucion.html'">
+            Comunicados
+          </button>
+          <button onclick="mostrarTalleres()">Talleres</button>
+          <button onclick="reiniciar()">Regresar</button>
+        </div>
+        <!--Sección Talleres-->
+        <div id="talleres" style="display: none">
+          <div id="mensaje3">
+            <p>Estos son los talleres que ofrecemos:</p>
+          </div>
+          <button onclick="window.location.href='taller-computacion.html'">
+            Taller de computación
+          </button>
+          <button onclick="window.location.href='taller-danza.html'">
+            Taller de danza
+          </button>
+          <button onclick="window.location.href='taller-deporte.html'">
+            Taller de deporte
+          </button>
+          <button onclick="window.location.href='taller-musica.html'">
+            Taller de música
+          </button>
+          <button onclick="window.location.href='taller-teatro.html'">
+            Taller de teatro
+          </button>
+          <button onclick="reiniciarTalleres()">Regresar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón de regresar al inicio -->
+    <button id="scrollToTop" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Archivos JavaScript (js) -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="js/asistente.js"></script>
+    <script src="js/boton-sube.js"></script>
+  </body>
+</html>

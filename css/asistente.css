@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#icono {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px; /* Tamaño del icono */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+#recuadro {
+  position: fixed;
+  bottom: 65px;
+  right: 10px;
+  width: 300px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  z-index: 1001;
+}
+
+#cabecera {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 14px;
+}
+
+#cabecera i {
+  font-size: 20px; /* Tamaño del icono */
+  margin-right: 10px;
+}
+
+#contenido {
+  padding: 10px;
+}
+
+#mensaje,
+#mensaje2,
+#mensaje3 {
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#botones button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  font-size: 14px;
+}
+
+#botones button:hover {
+  background-color: #218838;
+}
+
+#opciones,
+#talleres {
+  margin-top: 10px;
+}
+
+#opciones button,
+#talleres button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  font-size: 14px;
+}
+
+#opciones button:hover,
+#talleres button:hover {
+  background-color: #218838;
+}
+
+/* Cambios B16 (cuaderno) */
+
+#botones,
+#opciones,
+#talleres {
+  display: flex;
+  flex-direction: column; /* Botones en columna */
+  align-items: center; /* Centrados horizontalmente */
+  justify-content: center; /* Opcional, para centrar verticalmente */
+}
+
+#botones button,
+#opciones button,
+#talleres button {
+  width: 100%; /* Botones ocupan todo el ancho */
+  max-width: 280px; /* Opcional: Establece un ancho máximo para que no sean demasiado grandes */
+  margin: 5px 0; /* Espacio entre los botones */
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  font-size: 14px;
+}
+
+#botones button:hover,
+#opciones button:hover,
+#talleres button:hover {
+  background-color: #218838;
+}
+
+#botones,
+#opciones,
+#talleres {
+  display: flex;
+  flex-direction: column; /* Botones en columna */
+  align-items: center; /* Centrados horizontalmente */
+  justify-content: center; /* Opcional, para centrar verticalmente */
+}
+
+#botones button,
+#opciones button,
+#talleres button {
+  width: 100%; /* Botones ocupan todo el ancho */
+  max-width: 280px; /* Opcional: Establece un ancho máximo para que no sean demasiado grandes */
+  margin: 5px 0; /* Espacio entre los botones */
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  font-size: 14px;
+}
+
+#botones button:hover,
+#opciones button:hover,
+#talleres button:hover {
+  background-color: #218838;
+}

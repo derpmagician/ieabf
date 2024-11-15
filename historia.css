@@ -1,0 +1,57 @@
+.pergamino-container {
+  background-image: url("img/pergamino2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  border-radius: 10px;
+  color: #000; /* Ajusta el color del texto según sea necesario */
+  font-family: "Times New Roman", Times, serif; /* Opcional: para un estilo más clásico */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: para un efecto de sombra */
+  text-align: center;
+}
+
+.pergamino-container h2 {
+  margin: 0 0 20px 0; /* Añade margen inferior para separación */
+}
+
+/* Media query para vistas móviles */
+@media (max-width: 768px) {
+  .pergamino-container {
+    padding: 20px; /* Ajusta el padding para pantallas pequeñas */
+    background-size: 150% 150%; /* Estira la imagen para que encaje en el contenedor */
+    background-position: center; /* Centra la imagen */
+  }
+}
+
+/* Nuevo */
+.card__image-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card__img-galeria {
+  width: 150px; /* Ajusta el tamaño según sea necesario */
+  height: 200px; /* Ajusta el tamaño según sea necesario */
+  border-radius: 50%; /* Hace que la imagen sea ovalada */
+  object-fit: cover;
+}
+
+.card__data-galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 120px; /* Ajusta la altura según sea necesario */
+  box-sizing: border-box;
+}
+
+.card__article-galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px; /* Espacio entre los artículos */
+}

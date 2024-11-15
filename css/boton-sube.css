@@ -1,0 +1,32 @@
+/* Estilo del botón de regreso al inicio */
+.scroll-to-top {
+  position: fixed;
+  bottom: 10px; /* Distancia desde la parte inferior de la ventana */
+  right: 80px; /* Distancia desde la parte derecha de la ventana */
+  background-color: #28a745; /* Color de fondo del botón */
+  color: #fff; /* Color del ícono */
+  border: none;
+  border-radius: 50%; /* Bordes redondeados */
+  width: 50px; /* Ancho del botón */
+  height: 50px; /* Alto del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px; /* Tamaño del ícono */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
+  opacity: 0; /* Inicialmente oculto con transparencia */
+  pointer-events: none; /* Desactiva la interacción con el botón */
+  transition: opacity 0.5s ease, background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.scroll-to-top.show {
+  opacity: 1; /* Visibilidad completa */
+  pointer-events: auto; /* Activa la interacción con el botón */
+}
+
+.scroll-to-top:hover {
+  background-color: #218838; /* Color de fondo al pasar el mouse */
+  transform: scale(1.1); /* Escala ligeramente el botón al pasar el mouse */
+}

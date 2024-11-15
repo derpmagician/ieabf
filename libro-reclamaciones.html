@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- REMIXICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/abd0def56f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--=============== Archivos css ===============-->
+    <link rel="stylesheet" href="css/navbar-footer.css" />
+    <link rel="stylesheet" href="css/asistente.css" />
+    <link rel="stylesheet" href="css/boton-sube.css" />
+    <link rel="stylesheet" href="contactenos.css" />
+    <link rel="stylesheet" href="css/estilo-texto2.css" />
+    <link rel="stylesheet" href="libro-reclamaciones.css" />
+
+    <!-- Título y logo de la pestaña del sitio web -->
+    <title>
+      Libro de Reclamaciones - IEPGPE "TTE CRL ALFREDO BONIFAZ FONSECA"
+    </title>
+    <link rel="shortcut icon" href="img/insignia.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <!-- #region BANNER -->
+    <div class="div-banner">
+      <div class="banner-container"></div>
+    </div>
+    <!-- #endregion BANNER -->
+
+    <!-- #region Contactos -->
+    <div class="contacto">
+      <h1>Libro de Reclamaciones</h1>
+      <div class="text-container2">
+        <p>
+          Bienvenido al Libro de Reclamaciones de la IEPGPE "TTE CRL ALFREDO
+          BONIFAZ FONSECA". Este espacio está destinado para que puedas
+          registrar tus quejas, reclamos o sugerencias sobre nuestros servicios
+          educativos. Tu opinión es muy importante para nosotros y nos ayuda a
+          mejorar continuamente. <br />
+          <br />
+          Por favor, completa el formulario a continuación con la información
+          requerida y tu mensaje.
+        </p>
+        <br />
+        <br />
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        onsubmit="submit"
+        data-netlify-honeypot="bot-field"
+        action="/thank-you/"
+      >
+        <input type="hidden" name="bot-field" />
+        <div class="form-group">
+          <label for="name">Nombres:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Apellidos:</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Teléfono:</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            maxlength="9"
+            pattern="\d{9}"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Tipo de Solicitud:</label>
+          <select id="subject" name="subject" required>
+            <option value="reclamo">Reclamo</option>
+            <option value="queja">Queja</option>
+            <option value="sugerencia">Sugerencia</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <!-- #endregion Formulario -->
+
+    <div id="footer-container"></div>
+
+    <!-- Icono en la parte inferior derecha para acceder al asistente -->
+    <div id="icono" onclick="toggleRecuadro()">
+      <i class="fas fa-robot"></i>
+      <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+    </div>
+
+    <!-- Recuadro de opciones del asistente-->
+    <div id="recuadro">
+      <div id="cabecera">
+        <i class="fas fa-robot"></i>
+        <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+        <span>Asistente</span>
+      </div>
+      <div id="contenido">
+        <!--Mensaje inicial-->
+        <div id="mensaje">
+          <p>Hola, ¿En qué puedo ayudarte?</p>
+        </div>
+        <!--Botones iniciales-->
+        <div id="botones">
+          <button onclick="mostrarPreguntasFrecuentes()">
+            Consultas frecuentes
+          </button>
+          <button onclick="contactar()">
+            Quisiera ponerme en contacto con una persona
+          </button>
+        </div>
+        <!--Opciones de consultas frecuentes-->
+        <div id="opciones" style="display: none">
+          <div id="mensaje2">
+            <p>Selecciona la opción que más se adecue a tu consulta:</p>
+          </div>
+          <button onclick="window.location.href='matricula.html'">
+            Matrícula
+          </button>
+          <button onclick="window.location.href='noticias-institucion.html'">
+            Comunicados
+          </button>
+          <button onclick="mostrarTalleres()">Talleres</button>
+          <button onclick="reiniciar()">Regresar</button>
+        </div>
+        <!--Sección Talleres-->
+        <div id="talleres" style="display: none">
+          <div id="mensaje3">
+            <p>Estos son los talleres que ofrecemos:</p>
+          </div>
+          <button onclick="window.location.href='taller-computacion.html'">
+            Taller de computación
+          </button>
+          <button onclick="window.location.href='taller-danza.html'">
+            Taller de danza
+          </button>
+          <button onclick="window.location.href='taller-deporte.html'">
+            Taller de deporte
+          </button>
+          <button onclick="window.location.href='taller-musica.html'">
+            Taller de música
+          </button>
+          <button onclick="window.location.href='taller-teatro.html'">
+            Taller de teatro
+          </button>
+          <button onclick="reiniciarTalleres()">Regresar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón de regresar al inicio -->
+    <button id="scrollToTop" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Archivos JavaScript (js) -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="js/asistente.js"></script>
+    <script src="js/boton-sube.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+/* Estilos para el contenedor del texto */
+.text-container {
+  background-color: #f0f0f0; /* Color de fondo inicial */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave */
+  text-align: center;
+}
+
+.text-container:hover {
+  background-color: #e0e0e0; /* Color de fondo al hacer hover */
+}

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph meta tags --> 
+    <meta property="og:image" content="https://ieabf.com/img/insignia.png">
+    <meta property="og:image:width" content="448">
+    <meta property="og:image:height" content="256">
+    <meta property="og:image:alt" content>
+    <meta property="og:image:type" content="image/png">
+    
+
+    <!-- REMIXICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/abd0def56f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--=============== Archivos css ===============-->
+     <link rel="stylesheet" href="css/navbar-footer.css" /> 
+    <link rel="stylesheet" href="css/asistente.css" />
+    <link rel="stylesheet" href="css/boton-sube.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/animacion.css">
+    <link rel="stylesheet" href="css/estilo-texto.css">
+    <link rel="stylesheet" href="css/estilo-texto2.css">
+    <!-- <link rel="stylesheet" href="css/popup.css" /> -->
+
+    <!--=============== Carrusel NUESTROS ALIADOS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
+    <!-- Título y logo de la pestaña del sitio web -->
+    <title>Inicio - IEPGPE "TTE CRL ALFREDO BONIFAZ FONSECA"</title>
+    <link rel="shortcut icon" href="img/insignia.png" type="image/x-icon" />
+
+    <!-- Meta etiquetas para SEO -->
+    <meta name="keywords" content="colegio, IEPGPE, ieabf, Alfredo Bonifaz Fonseca, Alfredo Bonifaz" />
+    <meta name="description" content="Sitio web oficial de la IEPGPE 'TTE CRL ALFREDO BONIFAZ FONSECA', ofreciendo educación de calidad." />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <!-- #region BANNER -->
+    <section class="banner active">
+      <!-- Imagenes -->
+      <img class="img-slide active" src="img/img-inicio/colegio.jpeg" alt="" />
+      <img class="img-slide" src="img/img-inicio/escudos.png" alt="" />
+
+
+      <script>
+        const images = document.querySelectorAll(".banner img");
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+          images[currentImageIndex].classList.remove("active");
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          images[currentImageIndex].classList.add("active");
+        }
+
+        setInterval(showNextImage, 3000); // Cambiar de imagen cada 3 segundos
+      </script>
+
+      <!--  Social Media --> 
+        <!--
+      <div class="icons-banner">
+        <a
+          href="https://web.facebook.com/TteCrlABonifazFonseca/?locale=es_LA&_rdc=1&_rdr"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/@institucioneducativaalfred1578"
+          target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+      -->
+
+    </section>
+
+    <script src="js/banner.js"></script> 
+    <!-- #endregion BANNER -->
+
+    <!-- nuevo: Mensaje de bienvenida -->
+    <div class="presentacion">
+      <h1>¡BIENVENIDO A LA IEPGPE "TTE CRL ALFREDO BONIFAZ FONSECA"!</h1>
+    </div>
+
+    <!-- #region INTRODUCCION -->
+    <div class="introduccion">
+      <div class="info-container">
+        <section class="info-description">
+          <div class="info-img">
+            <img id="imagen-colegio" src="img/img-inicio/colegio-exterior.png" alt="" />
+          </div>
+
+          <div class="info-content">
+            <div class="text-container">
+            <p>
+              La Institución Educativa Pública de Gestión Privada del Ejército “Teniente Coronel Alfredo 
+              Bonifaz Fonseca” es una institución acreditada y certificada en calidad educativa. Cuenta 
+              con una política de mejora continua que orienta todos sus procesos a la excelencia académica. 
+              La dirección se sustenta en la gestión estratégica y el liderazgo pedagógico de su equipo 
+              directivo, para consolidar la formación integral de sus estudiantes. Siempre a la vanguardia 
+              con manejo de tecnologías de la información y la comunicación, desarrollo de plataformas para 
+              el e-learning, con laboratorios de inglés, matemática, cómputo y ciencias,  con aulas 
+              interactivas; constituyéndose así, como una institución: “líder en investigación e innovación, 
+              rumbo a la calidad educativa por excelencia”.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+      <script src="js/animacion.js"></script>
+    </div>
+
+    <!-- Contenedor para la imagen en tamaño completo -->
+    <div id="fullscreen-container" class="fullscreen-container">
+      <img id="fullscreen-image" src="img/img-inicio/colegio-exterior.png" alt="" />
+      <p class="fullscreen-caption">Exterior de la IEPGPE "TTE CRL ALFREDO BONIFAZ FONSECA".</p>
+    </div>
+
+    <!-- #endregion INTRODUCCION -->
+
+    <!-- Contenido después de la bienvenida -->
+      <!--#region TARJETAS-->
+      <div class="fondo">
+        <div class="title-cards">
+          <h2>ACREDITACIÓN, CERTIFICACIÓN , INNOVACIÓN</h2>
+        </div>
+        <div class="container-card">
+          <div class="card">
+            <figure>
+              <img src="img/img-inicio/acredita.jpg" class="custom-img1" />
+            </figure>
+            <div class="contenido-card">
+              <h3>ACREDITACIÓN INTERNACIONAL EN CALIDAD EDUCATIVA</h3>
+              <p>
+                Somos una Institución Educativa que asume retos, es por ello que apostamos por un sello de calidad Educativa. 
+                Alcanzar la Acreditación Internacional de la Calidad Educativa desde el modelo de SGCE fue un objetivo logrado 
+                gracias a la gestión institucional y al compromiso e identidad de la comunidad educativa en su conjunto. 
+                Nuestra motivación: lograr aprendizajes mediante el desarrollo de competencias y la practica de valores desde 
+                un enfoque holístico. <br> <br>
+                Actualmente, gracias a ese reconocimiento, se ha fortalecido la práctica pedagógica y ésta se ha complementado
+                con una gestión que considera los procesos, adoptando así una política de mejora continua que busca 
+                permanentemente el Aseguramiento de la calidad educativa en nuestra institución. <br> <br>
+                <b>Estándares de Acreditación logrados, para la Acreditación Internacional de la Calidad Educativa establecidos 
+                   en su momento según SGCE </b>
+                <br />
+                  
+                  <i
+                    class="fa fa-circle"
+                    style="
+                      font-size: 0.5em;
+                      vertical-align: middle;
+                      margin-right: 5px;
+                    "
+                  ></i>	Gestión institucional.
+                  <br />
+                  <i
+                    class="fa fa-circle"
+                    style="
+                      font-size: 0.5em;
+                      vertical-align: middle;
+                      margin-right: 5px;
+                    "
+                  ></i>	Gestión administrativa.
+                  <br />
+                  <i
+                    class="fa fa-circle"
+                    style="
+                      font-size: 0.5em;
+                      vertical-align: middle;
+                      margin-right: 5px;
+                    "
+                  ></i>	Gestión académica.
+                  <br />
+                  <i
+                    class="fa fa-circle"
+                    style="
+                      font-size: 0.5em;
+                      vertical-align: middle;
+                      margin-right: 5px;
+                    "
+                  ></i>	Formación del estudiante.
+                  <br />
+                  <i
+                    class="fa fa-circle"
+                    style="
+                      font-size: 0.5em;
+                      vertical-align: middle;
+                      margin-right: 5px;
+                    "
+                  ></i> Proyección a la comunidad y compromiso familiar.
+      
+              </p>
+  
+            </div>
+          </div>
+          <div class="card">
+  
+            <div class="contenido-card">
+              <figure>
+                <img src="img/img-inicio/certifica.jpg" class="custom-img2"/>
+              </figure>
+              <h3>CERTIFICACIÓN INTERNACIONAL DE LOS PROCESOS PARA LA MEJORA CONTINUA</h3>
+              <p>
+                Como institución estamos convencidos que la calidad de la educación básica es fundamental para el desarrollo 
+                sostenible de un país y, es por ello que debemos estar preparados para adaptarnos de manera inteligente y 
+                proactiva a los cambios del entorno, actualizándonos en nuevas técnicas, estrategias pedagógicas y contenidos 
+                pertinentes, pero sobre todo, aplicando procesos eficaces que contribuyen a la formación integral de los 
+                estudiantes, cultivando en éstos capacidades y valores que lo impulsen a afrontar con éxito los siguientes 
+                niveles educativos; para contribuir de este modo a la construcción de una sociedad democrática, más justa, 
+                solidaria y respetuosa. <br> <br>
+                Conseguir una educación de calidad requiere una mirada holística de los procesos que desarrolla la institución 
+                así como gestionar y monitorear los avances de la planificación, para reforzar los aciertos y aplicar 
+                correcciones oportunas. Nuestra IE apostó también por la Certificación de procesos según el modelo de SGCE. 
+                Este modelo conformado por 3 normas y 32 requerimientos, los cuales estuvieron interrelacionados para validar 
+                una gestión coherente internamente y alineada a las políticas públicas de calidad educativa más importantes de 
+                nuestro país, ayudó a realizar un recojo de información riguroso y exhaustivo que permitió al equipo de 
+                evaluadores corroborar la seriedad, confiabilidad y coherencia interna de las acciones de nuestra institución
+                logrando efectivamente dos certificaciones I y III. Siendo el total de certificaciones de SGCE: <br>
+                <br />
+                  <i
+                    class="fa fa-circle"
+                    style="
+                      font-size: 0.5em;
+                      vertical-align: middle;
+                      margin-right: 5px;
+                    "
+                  ></i>	<b>CERTIFICACIÓN I :</b> Gestión educativa y liderazgo institucional.
+                  <br />
+                  <i
+                    class="fa fa-circle"
+                    style="
+                      font-size: 0.5em;
+                      vertical-align: middle;
+                      margin-right: 5px;
+                    "
+                  ></i>	<b>CERTIFICACIÓN II :</b> Procesos de enseñanza y aprendizaje para el logro del perfil de egreso.
+                  <br />
+                  <i
+                    class="fa fa-circle"
+                    style="
+                      font-size: 0.5em;
+                      vertical-align: middle;
+                      margin-right: 5px;
+                    "
+                  ></i>	<b>CERTIFICACIÓN III :</b> Tutoría y convivencia.
+                 
+              </p>
+  
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="img/img-inicio/innova.jpg" class="custom-img3"/>
+            </figure>
+            <div class="contenido-card">
+              <h3>LÍDERES EN INVESTIGACIÓN E INNOVACIÓN EDUCATIVA</h3>
+              <p>
+                Impulsar prácticas innovadoras como el trabajo con proyectos es nuestra nueva fortaleza institucional, 
+                y es que asumir el reto de interrelacionar áreas considerando  problemáticas del contexto, hizo a la 
+                institución ganador en el concurso nacional de proyectos de innovación educativa organizado por el 
+                FONDEP por dos años consecutivos, con los proyectos: <b>“Material absorbente de petróleo y aceite residual 
+                con lana de ovino-2022”</b> e <b>“Investigo, aprendo y prevengo con CMEE-2023”</b>. También, fue ganador en el 
+                concurso de proyectos educativos innovadores organizado por la Unesco y la fundación BBVA con el 
+                proyecto: <b>“Cuidando el medio ambiente con MAPAR”</b>. Además, nuestra IE Tte Crl ABF con la maestra Dina 
+                Vela, representó al Perú en la XVI Conferencia Interamericana de Educación Matemática (CIAEM),  
+                con el proyecto inédito de innovación matemática <b>“Pensamiento crítico y creatividad en la resolución 
+                de problemas”</b>.  <br> <br>
+                Por otro lado, somos una IE a la vanguardia que impulsa y fomenta el uso de tecnologías de la información 
+                y comunicación, el dominio de computación e informática, así como el manejo de las diversas  
+                plataformas virtuales como Beereaders, Khan Academy, Spark, Science bits, entre otras para complementar 
+                los aprendizajes y estar a la vanguardia de la era tecnológica. <br> <br>
+                Finalmente, validar el nivel de dominio del idioma según el marco común europeo con evaluaciones 
+                internacionales en convenio con la Universidad de Cambridge, nos compromete a buscar estrategias para 
+                optimizar el dominio del idioma inglés potenciando el desarrollo cognitivo, habilidades y destrezas, 
+                además del crecimiento personal de nuestros estudiantes preparándolos para el mundo.
+      
+              </p>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--#endregion TARJETAS-->
+
+    <!-- #region CARTAS-->
+    <div class="wrapper-carta">
+      <h3 class="card-title">CALIDAD EDUCATIVA</h3>
+      <div class="cols-carta">
+        <div class="col-carta">
+          <div class="container-carta">
+            <div class="front-carta">
+              <!-- imagen -->
+              <div class="inner-carta">
+                <span
+                  ><img src="img/img-inicio/docentes-comprometidos.png" alt=""
+                /></span>
+                <p>Perfil de docentes</p>
+              </div>
+            </div>
+            <div class="back-carta">
+              <!-- descripción -->
+              <div class="inner-carta">
+                <button class="nivel-button" onclick="window.open('perfil-docente-inicial.html', '_blank')"><b>Inicial</b>  </button>
+                <button class="nivel-button" onclick="window.open('perfil-docente-primaria.html', '_blank')"><b>Primaria</b> </button>
+                <button class="nivel-button" onclick="window.open('perfil-docente-secundaria.html', '_blank')"><b>Secundaria</b> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-carta">
+          <div class="container-carta">
+            <div class="front-carta">
+              <!-- imagen -->
+              <div class="inner-carta">
+                <span
+                  ><img src="img/img-inicio/educacion-caidad.png" alt=""
+                /></span>
+                <p>Educación de Calidad</p>
+              </div>
+            </div>
+            <div class="back-carta">
+              <!-- descripción -->
+              <div class="inner-carta">
+                <p>
+                  Estamos enfocados en nutrir sus habilidades y conocimientos
+                  para prepararlos para un futuro lleno de éxitos y logros.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-carta">
+          <div class="container-carta">
+            <div class="front-carta">
+              <!-- imagen -->
+              <div class="inner-carta">
+                <span
+                  ><img src="img/img-inicio/recursos-tecnologicos.png" alt=""
+                /></span>
+                <p>Avance Tecnológico</p>
+              </div>
+            </div>
+            <div class="back-carta">
+              <!-- descripción -->
+              <div class="inner-carta">
+                <p>
+                  Contamos con laboratorios, proporcionamos a nuestros
+                  estudiantes acceso a tecnologías para facilitar su
+                  aprendizaje.
+                </p>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-carta">
+          <div class="container-carta">
+            <div class="front-carta">
+              <!-- imagen -->
+              <div class="inner-carta">
+                <span
+                  ><img src="img/img-inicio/infraestructura.png" alt=""
+                /></span>
+                <p>Infraestructura moderna</p>
+              </div>
+            </div>
+            <div class="back-carta">
+              <!-- descripción -->
+              <div class="inner-carta">
+                <p>
+                  Nos enorgullece ofrecer una infraestructura de primer nivel.
+                  Contamos con aulas equipadas, laboratorios especializados y
+                  espacios al aire libres.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion CARTAS-->
+
+    <!--#region TARJETAS-->
+    <div class="fondo">
+      <div class="title-cards">
+        <h2>CALIDAD EDUCATIVA POR EXCELENCIA</h2>
+      </div>
+      <div class="container-card">
+        <div class="card">
+          <figure>
+            <img src="img/img-inicio/inicial.jpeg" class="custom-img4"/>
+          </figure>
+          <div class="contenido-card">
+            <h3>NIVEL INICIAL</h3>
+            <p>
+              Nuestro enfoque por competencias promueve el aprendizaje autónomo, práctico y por descubrimiento a través del juego, la exploración y el desarrollo de habilidades sociales y cognitivas; con ambientes diseñados para favorecer las actividades propuestas por sus docentes como: zonas de juegos recreativos, psicomotricidad, juego-trabajo, biblioteca, etc. en un entorno que toma en cuenta las necesidades de cada niño y sus capacidades.
+              <br />
+              <br />
+              <em
+                style="display: block; text-align: center; font-style: italic"
+                ><b>“La enseñanza que deja huella no es la que se hace de cabeza a cabeza, sino de corazón a corazón.”</b>
+              </em>
+              <em
+                style="display: block; text-align: center; font-style: normal; color: gray;"
+                ><b>Howard G. Hendricks</b>
+              </em>
+            </p>
+
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="img/img-inicio/primaria.jpeg" class="custom-img4"/>
+          </figure>
+          <div class="contenido-card">
+            <h3>NIVEL PRIMARIA</h3>
+            <p>
+              Nuestra propuesta pedagógica “socio constructivista humanista” prepara a nuestros estudiantes a enfrentar los retos del futuro con una metodología ágil que implica el trabajo en equipo, la construcción de los aprendizajes, la formación en valores; complementado a ello talleres artísticos y deportivos para desarrollar habilidades y destrezas al máximo. Considerando como punto de partida las necesidades e intereses de nuestros estudiantes.
+              <br />
+              <br />
+              <em
+                style="display: block; text-align: center; font-style: italic"
+                ><b>“El objetivo de la educación es la virtud y el deseo de convertirse en un buen ciudadano.”</b>
+              </em>
+              <em
+                style="display: block; text-align: center; font-style: normal; color: gray;"
+                ><b>Platón</b>
+              </em>
+            </p>
+
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="img/img-inicio/pabellon.jpeg" class="custom-img4"/>
+          </figure>
+          <div class="contenido-card">
+            <h3>NIVEL SECUNDARIA</h3>
+            <p>
+              En esta etapa nuestros estudiantes se consolidan en el desarrollo de sus competencias en las diferentes áreas, de modo que son capaces de desarrollar proyectos integrados, trabajos de investigación como monografías o ensayos. Esto es posible porque contamos con infraestructura moderna dotadas de aulas con equipo audiovisual, laboratorios de ciencias, de cómputo, matemática e inglés; y que guiados con docentes comprometidos con la educación se preparan para convertirse en ciudadanos responsables y exitosos en una sociedad en constante cambio.
+              <br />
+              <br />
+              <em
+                style="display: block; text-align: center; font-style: italic"
+                ><b>“La educación es el arma más poderosa que puedes usar para cambiar el mundo.”</b>
+              </em>
+              <em
+                style="display: block; text-align: center; font-style: normal; color: gray;"
+                ><b>Nelson Mandela</b>
+              </em>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--#endregion TARJETAS-->
+
+    <!-- #region CALENDARIO -->
+    <div class="calendario">
+      <h1>NUESTROS VALORES</h1>
+      <div class="calendario-row">
+        <div class="mes" id="coraje" onclick="toggleText('coraje')">
+          <i class="fa-solid fa-hand-fist"></i>
+          <h2>Coraje</h2>
+        </div>
+        
+        <div class="mes" id="perseverancia" onclick="toggleText('perseverancia')">
+          <i class="fa-solid fa-person-hiking"></i>
+          <h2>Perseverancia</h2>
+        </div>
+
+        <div class="mes" id="responsabilidad" onclick="toggleText('responsabilidad')">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h2>Responsabilidad</h2>
+        </div>
+
+        <div class="mes" id="respeto" onclick="toggleText('respeto')">
+          <i class="fa-solid fa-handshake"></i>
+          <h2>Respeto</h2>
+        </div>
+        
+        <div class="mes" id="honestidad" onclick="toggleText('honestidad')">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+          <h2>Honestidad</h2>
+        </div>
+        
+        <div class="mes" id="solidaridad" onclick="toggleText('solidaridad')">
+          <i class="fa-solid fa-person-harassing"></i>
+          <h2>Solidaridad</h2>
+        </div>
+        
+        <div class="mes" id="liderazgo" onclick="toggleText('liderazgo')">
+          <i class="fa-solid fa-people-group"></i>
+          <h2>Liderazgo</h2>
+        </div>
+        
+        <div class="mes" id="identidad" onclick="toggleText('identidad')">
+          <i class="fa-solid fa-fingerprint"></i>
+          <h2>Identidad</h2>
+        </div>
+        
+        <div class="mes" id="superacion" onclick="toggleText('superacion')">
+          <i class="fa-solid fa-person-arrow-up-from-line"></i>
+          <h2>Superacion</h2>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion CALENDARIO -->
+
+    <!-- #region NUESTROS ALIADOS -->
+    <div class="slider-aliados">
+      <h2>ALIADOS PEDAGÓGICOS</h2>
+      <div class="aliados">
+        <div class="aliados-img">
+          <a
+            href="https://alfredobonifaz.sieweb.com.pe/sistema/login/"
+            target="_blank"
+          >
+            <img src="img/img-inicio/sieweb.svg" alt="logo-siaweb" />
+          </a>
+        </div>
+
+        <div class="aliados-img">
+          <a href="https://learn.eltngl.com/" target="_blank">
+            <img src="img/img-inicio/national.svg" alt="logo-national" />
+          </a>
+        </div>
+
+        <div class="aliados-img">
+          <a href="https://www.ehomekids.com/" target="_blank">
+            <img src="img/img-inicio/e-home.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="aliados-img">
+          <a href="https://englishtest.duolingo.com/login" target="_blank">
+            <img src="img/img-inicio/cambridge.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="aliados-img">
+          <a href="https://es.khanacademy.org/login" target="_blank">
+            <img src="img/img-inicio/khan.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="aliados-img">
+          <a href="https://www.beereaders.com/" target="_blank">
+            <img src="img/img-inicio/bee.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="aliados-img">
+          <a href="https://zoom.us/signin#/login" target="_blank">
+            <img src="img/img-inicio/zoom.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="aliados-img">
+          <a href="https://www.gob.pe/ejercito" target="_blank">
+            <img src="img/img-inicio/ejercito.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion NUESTROS ALIADOS -->
+
+    <div id="footer-container"></div>
+
+    <!-- Icono en la parte inferior derecha para acceder al asistente -->
+   <div id="icono" onclick="toggleRecuadro()">
+    <i class="fas fa-robot"></i> <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+ </div>
+ 
+ <!-- Recuadro de opciones del asistente-->
+ <div id="recuadro">
+    <div id="cabecera">
+       <i class="fas fa-robot"></i> <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+       <span>Asistente</span>
+    </div>
+    <div id="contenido">
+       <!--Mensaje inicial-->
+       <div id="mensaje">
+          <p>Hola, ¿En qué puedo ayudarte?</p>
+       </div>
+       <!--Botones iniciales-->
+       <div id="botones">
+          <button onclick="mostrarPreguntasFrecuentes()">Consultas frecuentes</button>
+          <button onclick="contactar()">Quisiera ponerme en contacto con una persona</button>
+       </div>
+       <!--Opciones de consultas frecuentes-->
+       <div id="opciones" style="display: none;">
+          <div id="mensaje2">
+             <p>Selecciona la opción que más se adecue a tu consulta:</p>
+          </div>
+          <button onclick="window.location.href='matricula.html'">Matrícula</button>
+          <button onclick="window.location.href='noticias-institucion.html'">Comunicados</button>
+          <button onclick="mostrarTalleres()">Talleres</button>
+          <button onclick="reiniciar()">Regresar</button>
+       </div>
+       <!--Sección Talleres-->
+       <div id="talleres" style="display: none;">
+          <div id="mensaje3">
+             <p>Estos son los talleres que ofrecemos:</p>
+          </div>
+          <button onclick="window.location.href='taller-computacion.html'">Taller de computación</button>
+          <button onclick="window.location.href='taller-danza.html'">Taller de danza</button>
+          <button onclick="window.location.href='taller-deporte.html'">Taller de deporte</button>
+          <button onclick="window.location.href='taller-musica.html'">Taller de música</button>
+          <button onclick="window.location.href='taller-teatro.html'">Taller de teatro</button>
+          <button onclick="reiniciarTalleres()">Regresar</button>
+       </div>
+    </div>
+ </div>
+
+    <!-- Botón de regresar al inicio -->
+   <button id="scrollToTop" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+   </button>
+
+<!-- Archivos JavaScript (js) -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script> 
+    <script src="js/asistente.js"></script>
+<script src="js/boton-sube.js"></script>
+    <script src="index.js"></script>    
+    <!-- <script src="js/popup.js"></script> -->
+  </body>
+</html>

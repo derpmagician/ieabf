@@ -1,0 +1,18 @@
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.language-button {
+  position: absolute;
+  right: -200px;
+}
+
+@media (max-width: 767px) {
+  .language-button {
+    right: 0px;
+    bottom: 80px;
+  }
+}

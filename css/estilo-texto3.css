@@ -1,0 +1,16 @@
+/* Estilos para el contenedor del texto */
+.text-container3 {
+  background-color: hsl(69, 87%, 70%); /* Color de fondo inicial */
+  padding: 0 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave */
+ 
+}
+
+.text-container3 p {
+text-align: justify;
+}
+
+.text-container3:hover {
+  background-color: hsl(69, 87%, 90%); /* Color de fondo al hacer hover */
+}

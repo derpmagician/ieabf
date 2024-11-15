@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- REMIXICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/abd0def56f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--=============== Archivos css ===============-->
+    <link rel="stylesheet" href="css/navbar-footer.css" />
+    <link rel="stylesheet" href="css/asistente.css" />
+    <link rel="stylesheet" href="css/boton-sube.css" />
+    <link rel="stylesheet" href="css/estilo-texto2.css" />
+    <link rel="stylesheet" href="css/nosotros.css" />
+    <link rel="stylesheet" href="certificacion-ingles.css">
+
+    <!-- Título y logo de la pestaña del sitio web -->
+    <title>
+      Certificaciones de Inglés - IEPGPE "TTE CRL ALFREDO BONIFAZ FONSECA"
+    </title>
+    <link rel="shortcut icon" href="img/insignia.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <!-- #region BANNER -->
+    <div class="div-banner">
+      <div class="banner-container"></div>
+    </div>
+    <!-- #endregion BANNER -->
+
+    <div class="presentacion">
+      <div class="title-container">
+        <h1 id="title">
+          EXÁMENES INTERNACIONALES <br />
+          CAMBRIDGE
+        </h1>
+        <button onclick="toggleLanguage()" class="language-button">
+          Cambiar Idioma
+        </button>
+      </div>
+      <div class="text-container2" id="text-container">
+        <p id="paragraph1">
+          Aplicar las evaluaciones de Cambridge YLE (Young Learners of English),
+          A2, B1 y B2 a los estudiantes de la institución educativa “Tte Crl
+          Alfredo Bonifaz Fonseca” es fundamental para impulsar su desarrollo en
+          el aprendizaje del inglés y asegurar la alineación con estándares
+          internacionales. Estas pruebas ofrecen una estructura progresiva, que
+          permite evaluar y certificar de manera objetiva las competencias
+          lingüísticas en función de cada nivel, desde los más pequeños en el
+          nivel primaria hasta estudiantes de secundaria. La certificación de
+          Cambridge, es reconocida mundialmente y aporta un valor significativo
+          al perfil académico de los estudiantes, ya que les brinda habilidades
+          de comunicativas que los preparan para contextos educativos y
+          laborales globalizados. Además, el proceso de preparación y evaluación
+          promueve la motivación, el compromiso y la confianza de los
+          estudiantes en su aprendizaje del idioma. Este enfoque impulsa la
+          calidad educativa de la institución, generando un impacto positivo ya
+          que contar con un certificado de Cambridge puede abrir puertas tanto
+          en el ámbito académico como profesional, facilitando el acceso a
+          universidades y oportunidades laborales en entornos donde el inglés es
+          un requisito.
+        </p>
+        <img
+          src="img/img-plataformas/cambridge.png"
+          alt="Descripción de la imagen"
+          style="width: 100%; max-width: 600px"
+        />
+        <p id="paragraph2">
+          La evaluación internacional Cambridge mide según estándares
+          internacionales el nivel de dominio del idioma inglés. La evaluación
+          considera los niveles establecidos por el marco común europeo de
+          referencia para las lenguas (MCER), desde pre-A1 hasta C2. En esta
+          evaluación participan nuestros estudiantes ya que acceden a uno de los
+          certificados de idiomas que acreditan un nivel adecuado de inglés con
+          más repercusión y prestigio a nivel mundial.
+        </p>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <!-- Icono en la parte inferior derecha para acceder al asistente -->
+    <div id="icono" onclick="toggleRecuadro()">
+      <i class="fas fa-robot"></i>
+      <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+    </div>
+
+    <!-- Recuadro de opciones del asistente-->
+    <div id="recuadro">
+      <div id="cabecera">
+        <i class="fas fa-robot"></i>
+        <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+        <span>Asistente</span>
+      </div>
+      <div id="contenido">
+        <!--Mensaje inicial-->
+        <div id="mensaje">
+          <p>Hola, ¿En qué puedo ayudarte?</p>
+        </div>
+        <!--Botones iniciales-->
+        <div id="botones">
+          <button onclick="mostrarPreguntasFrecuentes()">
+            Consultas frecuentes
+          </button>
+          <button onclick="contactar()">
+            Quisiera ponerme en contacto con una persona
+          </button>
+        </div>
+        <!--Opciones de consultas frecuentes-->
+        <div id="opciones" style="display: none">
+          <div id="mensaje2">
+            <p>Selecciona la opción que más se adecue a tu consulta:</p>
+          </div>
+          <button onclick="window.location.href='matricula.html'">
+            Matrícula
+          </button>
+          <button onclick="window.location.href='noticias-institucion.html'">
+            Comunicados
+          </button>
+          <button onclick="mostrarTalleres()">Talleres</button>
+          <button onclick="reiniciar()">Regresar</button>
+        </div>
+        <!--Sección Talleres-->
+        <div id="talleres" style="display: none">
+          <div id="mensaje3">
+            <p>Estos son los talleres que ofrecemos:</p>
+          </div>
+          <button onclick="window.location.href='taller-computacion.html'">
+            Taller de computación
+          </button>
+          <button onclick="window.location.href='taller-danza.html'">
+            Taller de danza
+          </button>
+          <button onclick="window.location.href='taller-deporte.html'">
+            Taller de deporte
+          </button>
+          <button onclick="window.location.href='taller-musica.html'">
+            Taller de música
+          </button>
+          <button onclick="window.location.href='taller-teatro.html'">
+            Taller de teatro
+          </button>
+          <button onclick="reiniciarTalleres()">Regresar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón de regresar al inicio -->
+    <button id="scrollToTop" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Archivos JavaScript (js) -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="js/asistente.js"></script>
+    <script src="js/boton-sube.js"></script>
+    <script src="certificacion-ingles.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- REMIXICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/abd0def56f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--=============== Archivos css ===============-->
+    <link rel="stylesheet" href="css/navbar-footer.css" />
+    <link rel="stylesheet" href="css/asistente.css" />
+    <link rel="stylesheet" href="css/boton-sube.css" />
+    <link rel="stylesheet" href="css/estilo-texto.css" />
+    <link rel="stylesheet" href="css/estilo-texto2.css" />
+    <link rel="stylesheet" href="css/nosotros.css" />
+    <link rel="stylesheet" href="servicio-salud.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/estilo-galeria.css" />
+    <link
+      rel="stylesheet"
+      href="elementos-lightbox/dist/css/lightbox.min.css"
+    />
+
+    <!-- Título y logo de la pestaña del sitio web -->
+    <title>Servicio de Salud - IEPGPE "TTE CRL ALFREDO BONIFAZ FONSECA"</title>
+    <link rel="shortcut icon" href="img/insignia.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <!-- #region BANNER -->
+    <div class="div-banner">
+      <div class="banner-container"></div>
+    </div>
+    <!-- #endregion BANNER -->
+
+    <!-- #region SUBDIRECTORA -->
+    <div class="presentacion">
+      <h1>SERVICIO DE SALUD</h1>
+    </div>
+
+    <div class="presentacion-container">
+      <section class="presentacion-content">
+        <div class="presentacion-img-salud">
+          <img src="img/servicio-salud/servicio-salud-3.jpg" alt="" />
+        </div>
+
+        <div class="presentacion-text">
+          <div class="text-container">
+            <p>
+              Nuestra institución Educativa cuenta con dos (02) establecimientos
+              de salud (tópicos), brindando asistencia médica, primeros auxilios
+              y apoyo en situaciones de emergencia. Además, promovemos la
+              educación en salud y el autocuidado, ayudando a nuestros
+              estudiantes a comprender la importancia de mantener un estilo de
+              vida saludable y tomar decisiones informadas en lo que respecta a
+              su bienestar. Nuestros tópicos son recursos valiosos que nos
+              permiten brindar tranquilidad a los padres y tutores, sabiendo que
+              sus hijos están en un entorno seguro y que se les brinda la
+              atención de salud adecuada y necesaria.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- #endregion SUBDIRECTORA -->
+
+    <div id="footer-container"></div>
+
+    <!-- Icono en la parte inferior derecha para acceder al asistente -->
+    <div id="icono" onclick="toggleRecuadro()">
+      <i class="fas fa-robot"></i>
+      <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+    </div>
+
+    <!-- Recuadro de opciones del asistente-->
+    <div id="recuadro">
+      <div id="cabecera">
+        <i class="fas fa-robot"></i>
+        <!-- Cambiar 'fa-robot' por otro de ser necesario -->
+        <span>Asistente</span>
+      </div>
+      <div id="contenido">
+        <!--Mensaje inicial-->
+        <div id="mensaje">
+          <p>Hola, ¿En qué puedo ayudarte?</p>
+        </div>
+        <!--Botones iniciales-->
+        <div id="botones">
+          <button onclick="mostrarPreguntasFrecuentes()">
+            Consultas frecuentes
+          </button>
+          <button onclick="contactar()">
+            Quisiera ponerme en contacto con una persona
+          </button>
+        </div>
+        <!--Opciones de consultas frecuentes-->
+        <div id="opciones" style="display: none">
+          <div id="mensaje2">
+            <p>Selecciona la opción que más se adecue a tu consulta:</p>
+          </div>
+          <button onclick="window.location.href='matricula.html'">
+            Matrícula
+          </button>
+          <button onclick="window.location.href='noticias-institucion.html'">
+            Comunicados
+          </button>
+          <button onclick="mostrarTalleres()">Talleres</button>
+          <button onclick="reiniciar()">Regresar</button>
+        </div>
+        <!--Sección Talleres-->
+        <div id="talleres" style="display: none">
+          <div id="mensaje3">
+            <p>Estos son los talleres que ofrecemos:</p>
+          </div>
+          <button onclick="window.location.href='taller-computacion.html'">
+            Taller de computación
+          </button>
+          <button onclick="window.location.href='taller-danza.html'">
+            Taller de danza
+          </button>
+          <button onclick="window.location.href='taller-deporte.html'">
+            Taller de deporte
+          </button>
+          <button onclick="window.location.href='taller-musica.html'">
+            Taller de música
+          </button>
+          <button onclick="window.location.href='taller-teatro.html'">
+            Taller de teatro
+          </button>
+          <button onclick="reiniciarTalleres()">Regresar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón de regresar al inicio -->
+    <button id="scrollToTop" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Archivos JavaScript (js) -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="js/asistente.js"></script>
+    <script src="js/boton-sube.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/inicializar-galeria.js"></script>
+    <script src="elementos-lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/inicializar-lightbox.js"></script>
+  </body>
+</html>
