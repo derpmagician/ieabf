@@ -23,11 +23,31 @@
     <link rel="stylesheet" href="contactenos.css" />
     <link rel="stylesheet" href="css/estilo-texto2.css" />
     <link rel="stylesheet" href="libro-reclamaciones.css" />
+    <link rel="stylesheet" href="css/academico.css" />
+
+    <style>
+      .btn-regresar {
+        background-color: #4caf50; /* Verde */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-regresar:hover {
+        background-color: #45a049; /* Verde oscuro */
+      }
+    </style>
 
     <!-- Título y logo de la pestaña del sitio web -->
-    <title>
-      Libro de Reclamaciones - IEPGPE "TTE CRL ALFREDO BONIFAZ FONSECA"
-    </title>
+    <title>Formulario enviado - IEPGPE "TTE CRL ALFREDO BONIFAZ FONSECA"</title>
     <link rel="shortcut icon" href="img/insignia.png" type="image/x-icon" />
   </head>
 
@@ -40,63 +60,17 @@
     </div>
     <!-- #endregion BANNER -->
 
-    <!-- #region Contactos -->
-    <div class="contacto">
-      <h1>Libro de Reclamaciones</h1>
-      <div class="text-container2">
-        <p>
-          Bienvenido al Libro de Reclamaciones de la IEPGPE "TTE CRL ALFREDO
-          BONIFAZ FONSECA". Este espacio está destinado para que puedas
-          registrar tus quejas, reclamos o sugerencias sobre nuestros servicios
-          educativos. Tu opinión es muy importante para nosotros y nos ayuda a
-          mejorar continuamente. <br />
-          <br />
-          Por favor, completa el formulario a continuación con la información
-          requerida y tu mensaje.
-        </p>
-        <br />
-        <br />
-      </div>
+    <div class="presentacion">
+      <h1>Su formulario ha sido enviado</h1>
     </div>
 
-    <!-- Región de Formulario -->
-    <div class="contact-form">
-      <form id="contact-form">
-        <div class="form-group">
-          <label for="name">Nombres:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Correo Electrónico:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="phone">Teléfono:</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            pattern="[0-9]{9}"
-            maxlength="9"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="subject">Tipo de Solicitud:</label>
-          <select id="subject" name="subject" required>
-            <option value="reclamo">Reclamo</option>
-            <option value="queja">Queja</option>
-            <option value="sugerencia">Sugerencia</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <div class="form-group">
-          <button type="submit">Enviar</button>
-        </div>
-      </form>
+    <div class="presentacion">
+      <button
+          class="btn-regresar"
+          onclick="window.location.href='index.html'"
+        >
+          Regresar a inicio
+        </button>
     </div>
 
     <div id="footer-container"></div>
